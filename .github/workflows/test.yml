@@ -13,6 +13,8 @@ jobs:
       # Test Case 1
       - name: Run Test Case 1
         run: python3 find_lowest_number/find_lowest_number.py test_data/test1_input.txt test_data/test1_actual.txt
+      - name: Diff Test Case 1
+        run: diff test_data/test1_actual.txt test_data/test1_expected.txt
       
         
       
